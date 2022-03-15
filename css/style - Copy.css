@@ -1,0 +1,294 @@
+/* Importar las Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&family=Roboto+Serif:wght@300;400;700&display=swap');
+
+/* -----Selector universal, reseteamos margin y padding ---- */
+*{
+	box-sizing: border-box;
+	margin : 0;
+	padding: 0;
+	
+}
+
+body{
+	background-color: #FFFFFF ;
+}
+
+/* ----------Selectores de titulos y texto -----------*/
+
+h1, h2, h3, h4{
+	color: #D99B96;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+}
+
+h1{
+	font-size: 350%;
+}
+
+h2{
+	font-size: 250%;
+}
+
+h3{
+	font-size: 180%
+}
+
+h4{
+	font-size: 120%
+}
+p{
+	color: #5D3A1A;
+	font-size: 120%
+}
+
+/*------------------ Botonera ---------------------*/
+
+.botonera{
+	background-color:#417A95;
+	position: sticky;
+	top: 0;
+	padding: 1rem 4rem;
+	height: 5rem;
+	border-bottom: solid;
+	border-color: #5D3A1A ;
+}
+	.botonera ul{
+		gap: 2rem;
+	}
+		.botonera ul li{
+			list-style: none;
+		}
+			.botonera ul li a{
+				color: #FFFFFF;
+				font-weight: 400;
+				font-size: 150%;
+				text-decoration: none;
+			}
+				.botonera ul li a:hover{
+					color: #D99B96;
+				}
+
+.botonera .logo a{	
+	text-decoration: none;
+}
+
+	.botonera .logo a p{
+		text-transform: uppercase;
+		color: #FFFFFF;
+		font-weight: 400;
+		font-size: 150%;
+		margin-left: 1rem;
+	}
+	.botonera .logo a img{
+		height: 10rem;
+		position: relative;
+		top: 2rem;
+		border-style: solid;
+		border-color: #5D3A1A;
+	}
+
+
+
+/* -----------------Index imagen Hero-------------------  */
+
+.index-banner-1{
+	background-image: url('../img/banner1.png');
+	height: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.index-banner-1 h1{
+	color:#FFFFFF;
+	background-color: rgba(93, 58, 26, 0.5);
+	padding:  1%;
+	border-style: solid;
+	border-radius: 10%;
+	width: 75%;
+}
+
+
+/*-------------- Index productos y servicios ------------*/
+
+.index-section-1{
+	padding: 3rem 2rem;
+	overflow: hidden;
+}
+	.index-section-1 .titulo h2{
+		padding-bottom: 1rem;
+	}
+	.index-section-1 .titulo p{
+		padding: 1% 15%;
+	}
+
+.index-products{
+	padding: 2rem 5rem;
+	gap:  4rem;
+}
+
+	.index-products .card{
+		gap: 1rem;
+	}
+		.index-products .card a{
+			text-decoration: none;
+		}
+			.index-products .card a img{
+				border-radius: 10%;
+			}
+			.index-products .card a h3:hover{
+				color: #417A95;
+			}
+
+		.index-products .card p{
+			text-align: center;
+		}
+
+/*------------------ Index Banner 2------------------------------*/
+
+.index-banner-2{
+	background-image: url('../img/banner2.png');
+	height: 15rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.index-banner-2 h2{
+	color:#D99B96;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-style: solid;
+	border-color: black;
+}
+/*----------------------Index seccion Historia-------------------*/
+
+.index-section-2{
+	gap:  3rem;
+	padding: 5rem 20%;
+}
+
+.index-section-2 .historia{
+	gap: 1rem;
+}
+	.index-section-2 .historia p{
+		text-align: justify;
+	}
+
+/*-----------------------Index seccion Galeria--------------------*/
+
+.index-section-3{
+	background-color: #86B8C1;
+	padding: 3rem 5rem;
+	gap: 1rem;
+	border-top: solid;
+	border-top-color: #5D3A1A;
+}
+
+.index-section-3 h3{
+	color: #5D3A1A;
+	margin-bottom: 1rem;
+}
+
+
+/*----------------------- Footer --------------------------------*/
+
+footer div h4{
+	padding-bottom: 0.5rem;
+}
+footer div p{
+	color: #FFFFFF;
+	font-size: 100%;
+}
+
+.footer-div{
+	background-color: #417A95;	
+	gap: 2rem;
+	padding: 1rem 3rem;
+	border-top: solid;
+	border-top-color: #5D3A1A ;
+}
+
+.footer-section-1 h4{
+	padding-bottom: 0.5rem;
+}
+.footer-section-1 ul{
+	gap: 0.1rem;
+}
+	.footer-section-1 ul li{
+		list-style: none;
+	}
+		.footer-section-1 ul li a{
+			color: #FFFFFF;
+			font-size: 100%;
+			text-decoration: none;
+		}
+.footer-section-4 ul{
+	gap: 2rem;
+}
+	.footer-section-4 ul li{
+		list-style: none;
+	}
+		.footer-section-4 ul li a{
+			color: #FFFFFF;
+			font-size: 100%;
+			text-decoration: none;
+		}
+			.footer-section-4 ul li a img{
+				display: block;  
+				text-align: center;
+			}
+
+.footer-legend{
+	background-color: black;
+	height: 1.5rem;
+	padding: 0.5rem;
+}
+.footer-legend p{
+	text-align: center;
+	font-size: 90%;
+}
+
+
+
+
+/*-------------Clases para contenedores-------------*/
+
+.container{
+	display: flex;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.justify-evenly{
+	justify-content: space-evenly;
+}
+.justify-between{
+	justify-content: space-between;
+}
+
+.justify-left{
+	justify-content: start;
+}
+.justify-center{
+	justify-content: center;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+.align-center{
+	align-items: center;
+}
+.w-25{
+	width: 25%;
+}
+.w-50{
+	width: 50%;
+}
+.w-75{
+	width: 75%;
+}
+
