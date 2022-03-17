@@ -6,7 +6,17 @@
 	<title>Laurel Artesanal</title>
 
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/animation.css">
+	<link rel="stylesheet" href="./css/animaciones.css">
+
+
+	<!-- WOW js -->
+	<link rel="stylesheet" href="./css/animate.css">
+	<script src="./js/wow.min.js"></script>
+    <script>
+		new WOW().init();
+	</script>
+	<!-- ------ -->
+
 
 </head>
 <body class="grid-index">
@@ -35,7 +45,7 @@
 		<!-------Banner #1 /Carrusel de Imagenes ------------------>
 		<figure class="indexBaner-uno">
 			<!-- <img src="./img/banner1.png" alt="imagen banner 1"> -->
-			<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+			<h1 class="animate">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 		</figure>
 
 	</header>
@@ -53,7 +63,7 @@
 
 			<!------ Introduccion Productos ---------------->
 			<article class="productos">	
-				<figure class="imp">
+				<figure class="imp transform">
 					<img src="./img/pasteleria.jpg" alt="Producto 1">
 					<div>
 						<a href="./pag/productos.html#producto1">					
@@ -63,7 +73,7 @@
 					</div>
 				</figure>
 
-				<figure class="par">
+				<figure class="par transform">
 					<img src="./img/pasteleria.jpg" alt="Producto 2">
 					<div>
 						<a href="./pag/productos.html#producto2">					
@@ -73,7 +83,7 @@
 					</div>
 				</figure>
 
-				<figure class="imp">
+				<figure class="imp transform">
 					<img src="./img/pasteleria.jpg" alt="Producto 3">
 					<div>
 						<a href="./pag/productos.html#producto3">					
@@ -83,7 +93,7 @@
 					</div>
 				</figure>
 
-				<figure class="par">
+				<figure class="par transform">
 					<img src="./img/pasteleria.jpg" alt="Producto 4">
 					<div>
 						<a href="./pag/productos.html#producto4">					
@@ -98,9 +108,9 @@
 
 
 		<!--------- Banner # 2 ------------------------------------>
-		<section class="indexBaner-dos">
+		<section class="indexBaner-dos linear-gradient">
 			<!-- <img src="./img/banner2.png" alt="imagen banner 2"> -->
-			<h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+			<h2 class="wow animate__fadeInLeft" data-wow-duration="2s">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
 		</section>
 
 
