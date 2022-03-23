@@ -3,30 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Galeria</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- My Style -->	
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animaciones.css">
 
+	<title>Galeria</title>
 </head>
 
 <body class="grid-galeria">
 	<header>
 
-		<!------ Barra de Navegacion------------------------------>
-		<nav class="nav">
-			<figure class="logo">
-				<a href="../index.html">
-					<img src="../img/logo.png" alt="logo Laurel Artesanal">
-					<!-- <p>laurel artesanal</p> -->
-				</a>				
-			</figure>			
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="./historia.html">Historia</a></li>
-				<li><a href="./productos.html">Productos</a></li>
-				<li><a href="./galeria.html">Galeria</a></li>
-				<li><a href="./contacto.html">Contacto</a></li>
-			</ul>
+		<!----- Navbar Bootstrap ---------------------------------------------------->
+
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top border-bottom" id="botonera">
+		  <div class="container-fluid flex-column flex-md-row justify-content-center justify-md-content-around align-items-center">
+		    <a class="navbar-brand d-flex justify-content-center me-0" href="../index.html">
+		    	<img src="../img/logo.png" alt="logo Laurel Artesanal" class="w-75" id="logo">
+		    </a>
+
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		      <ul class="navbar-nav mb-0 me-md-3 me-lg-4 me-xl-5 text-center">
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="../index.html">Inicio</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./historia.html">Historia</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./galeria.html">Galeria</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./contacto.html">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 		<!--Fin Barra de Navecacion -->
 
@@ -134,6 +155,9 @@
 			<p>Todos los derechos reservados @ - Diego Mazo</p>
 		</div>	
 	</footer>
+
+	<!-- Booststrap JS -->
+	<script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -1,13 +1,12 @@
-/* MOVILE FIRST */
-
 /* Importar las Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&family=Roboto+Serif:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@400;600&display=swap');
 
 /* -----Selector universal, reseteamos margin y padding ---- */
 *{
 	margin : 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
 }
 
 h1, h2, h3, h4{
@@ -16,94 +15,31 @@ h1, h2, h3, h4{
 	text-align: center;
 }
 
-/*-------------------------INDEX PAGE------------------------------------------------*/										
-/*-------------------------------------------------------------------------*/
 
-
-.grid-index{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(7, auto) ;
-	grid-template-areas:	"nav"
-							"indexBaner-uno"
-							"index-prod"
-							"indexBaner-dos"
-							"index-his"
-							"index-gal"
-							"foot";
-}
+/*-------------------------INDEX PAGE------------------------------------------------*/
 
 /*--------BOTONERA-------------------------------*/
-.nav{
-	grid-area: nav;
+#botonera{
 	background-color: #417A95;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: sticky;
-	top: 0;
 }
-	.nav .logo a{
-		display: flex;
-		justify-content: center;
-		text-decoration: none;
-		padding-top: 5% ;
+	#botonera ul li a{
+		color: #FFFFFF;
+		font-weight: 400;
+		font-size: 120%;
 	}
-		.nav .logo a img{
-			width: 50%;
-			border-style: solid;
-			border-color: #5D3A1A;
-		}
-	.nav ul{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		gap: 4%;
-		padding: 2%;
+
+	#botonera ul li a:hover{
+		color: #D99B96;
 	}
-		.nav ul li{
-			list-style: none;
-		}
-			.nav ul li a{
-				color: #FFFFFF;
-				font-weight: 400;
-				font-size: 120%;
-				text-decoration: none;
-			}
-				.nav ul li a:hover{
-					color: #D99B96;
-				}
 
-/*--------BANNER #1 INDEX--------------------------*/
-
-.indexBaner-uno{
-	grid-area: indexBaner-uno;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url("../img/banner1.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 18vh;
+#logo{
+	border-style: solid;
+	border-color: #5D3A1A;
 }
-	.indexBaner-uno h1{
-		font-family: 'Courgette', cursive;
-		text-align: center;
-		font-size: 150%;
-		color:black;
-		background-color: rgba(250, 250, 250, 0.7);
-		padding:  1%;
-		border-style: solid;
-		border-radius: 10%;
-		width: 75%;
-	}
+
 
 /*------------SECCION PRODUCTS INDEX---------------*/
-.index-prod{
-	grid-area: index-prod;
+.indexProducts{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -113,59 +49,54 @@ h1, h2, h3, h4{
 	margin-left: 5%;
 }
 
-.index-prod .intro{
-	display: flex;
-	flex-direction:column ;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2%;
-}
-	.index-prod .intro h2{
-		padding-top: 5%;
-	}
-	.index-prod .intro p{
-		text-align: justify;
-		padding: 2% 5%;
-		font-size: 100%;
-	}
-
-.index-prod .productos{
-	display: flex;
-	flex-direction: column;
-
-}
-	.index-prod .productos .imp{
+	.indexProducts .imp{
 		display: flex;
 		flex-direction: row;
 		padding: 2% 10%;
 		gap: 5%;
-		background-color: rgba(93, 58, 23, 0.3) ;
+		background-color: rgba(93, 58, 26, 0.3);
+		border-radius: 5%;
 	}
-	.index-prod .productos .par{
+	.indexProducts .par{
 		display: flex;
 		flex-direction: row;
 		padding: 2% 10%;
 		gap: 5%;
+		background-color: rgba(65, 122, 149, 0.3);
+		border-radius: 5%;
 	}
-	.index-prod .productos figure div{
+		.indexProducts .par img{
+			order: 1;
+		}
+		.indexProducts .par div{
+			order: 0;
+		}
+
+	.indexProducts figure div{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		gap: 5%;
 	}
-		.index-prod .productos figure div p{
-			text-align: justify;
+		.indexProducts figure div h3{
+			color: #417A95;
+			margin-top: 5%;
+			padding-top: 1%;
 		}
-		.index-prod .productos figure div a{
+		.indexProducts figure div p{
+			text-align: center;
+		}
+		.indexProducts figure div a{
 			text-decoration: none;
+			background-color: #417A95;
+			color: white;
 		}
-			.index-prod .productos figure div a:hover h3{
-				color: #417A95;
+			.indexProducts figure div a:hover h3{
+				color: #D99B96;
 			}
-		.index-prod .productos figure img{
+		.indexProducts figure img{
 			width: 45%;
 		}
-
 
 /*------------BANNER #2 INDEX--------------------------*/
 .indexBaner-dos{
@@ -202,6 +133,11 @@ h1, h2, h3, h4{
 			padding-top: 5%;
 		}
 
+		.index-his div a{
+			background-color: #417A95;
+			color: #FFFFFF;
+		}
+
 
 /*------------SECCION GALERIA INDEX--------------------------*/
 .index-gal{
@@ -217,9 +153,15 @@ h1, h2, h3, h4{
 		padding-bottom: 5%;
 		color: #5D3A1A;
 	}
+	.index-gal a{
+		background-color: #417A95;
+		color: #FFFFFF;
+	}
 	.index-gal ul li{
 		list-style: none;
+		margin-top: 2%;
 	}
+
 
 /*-------------FOOTER-------------------------*/
 .foot{
@@ -404,81 +346,35 @@ h1, h2, h3, h4{
 /*--------------------CONTACTO PAGE-----------------------------------------*/										
 /*-------------------------------------------------------------------------*/
 
-.grid-contacto{
-	display: grid;
-	grid-template-columns: 1fr ;
-	grid-template-rows: repeat(3, auto);
-	grid-template-areas:	"nav"
-							"contacto-main"
-							"foot";
-}
-.contacto-main{
-	grid-area: contacto-main;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.contacto-main .formulario{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 5% 10%;
-}
+
 .contacto-main section p{
 	text-align: center;
-	padding: 5% 0;
-}
-.contacto-main section form fieldset{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 	padding: 5%;
 }
-.w-75{
-	width: 75%;
-	margin-bottom: 3%;
+
+.contacto-main button{
+	background-color: #417A95;
+	color #FFFFFF;
 }
-.w-30{
-	width: 30%;
-	margin-bottom: 3%;
-}
-.contacto-main .info{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: start;
-	padding: 5% 10%;
-	gap:  5%;
-}
-.contacto-main .info .contact{
-	width: 45%;
-	display: flex;
-	flex-direction: column;
-}
-.contacto-main .info .contact p{
-	font-size: 90%;
-}
-.contacto-main .info .social{
-	width: 45%;
-	display: flex;
-	flex-direction: column;
-}
-.contacto-main .info .social ul{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.contacto-main .info .social ul li{
+
+.contacto-main  .social ul{
+		padding-left: 0;
+}				
+.contacto-main .social ul li{
 	list-style: none;
 	margin-bottom: 5%;
 	margin-top: 5%;
 }
-.contacto-main .info .social ul li a{
+.contacto-main  .social ul li a{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+/*.contacto-main .info .social ul li a{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-}
+}*/
 .contacto-main .frame{
 	width: 100%;
 }
@@ -491,11 +387,9 @@ h1, h2, h3, h4{
 
 
 
-
 /*---------------------------------------------------------------------------------*/
-/*-------------------------! RESPONSIVE !	---------------------------------------*/									
+/*-------------------------! @MEDIA QUERIES !	---------------------------------------*/									
 /*--------------------------------------------------------------------------------*/
-
 
 
 
@@ -503,83 +397,54 @@ h1, h2, h3, h4{
 
 @media screen and (min-width: 768px){
 
-	/*------------------------INDEX PAGE------------------------------------------*/											
+	/*------------------------INDEX PAGE------------------------------------------*/
 
 	/*--------BOTONERA------------------------------*/
-	.nav{
-		flex-direction: row;
-		justify-content: space-between;
+	#botonera ul li a{
+		font-size: 150%;
 	}
-		.nav .logo a{
-			padding: 1% ;
-		}
-		.nav ul{	
-			gap: 10%;
-			padding: 0%;
-			margin-right: 15%;
-		}
-			.nav ul li a{
-				font-size: 150%;			
-			}
-
-	/*--------Index Banner #1-----------------------------*/
-
-	.indexBaner-uno{		
-		height: 25vh;
+	#logo{
+		width: 50% !important;
 	}
-		.indexBaner-uno h1{	
-			font-size: 170%;
-			padding:  1%;
-			border-radius: 10%;
-			width: 70%;
-		}
-
-	/*------------Index Products---------------------*/
 
 
-	.index-prod .intro{
-		margin-bottom: 2%;
-		margin-right:10% ;
-		margin-left: 10%;
-	}
-		.index-prod .intro h2{
-			font-size: 160%;
-		}
-		.index-prod .intro p{
-			font-size: 120%;
-		}
-
-	.index-prod .productos{
+	/*------------SECCION PRODUCTS INDEX---------------*/
+		.indexProducts{
 		flex-direction: row;
 		gap:  5%;
 	}
-		.index-prod .productos .imp{
+		.indexProducts .imp{
 			flex-direction: column;
 			align-items: center;
 			padding: 2% 1%;
 			gap: 5%;
-			background-color: rgba(93, 58, 23, 0.3) ;
+			border-radius: 10%;
+			background-color: rgba(93, 58, 26, 0.3);
 		}
-		.index-prod .productos .par{
-			display: flex;
+		.indexProducts .par{
 			flex-direction: column;
 			align-items: center;
 			padding: 2% 1%;
 			gap: 5%;
-			background-color: rgba(93, 58, 23, 0.3) ;
+			border-radius: 10%;
+			background-color: rgba(93, 58, 26, 0.3);
 		}
+			.indexProducts .par img{
+				order: 0;
+			}
+			.indexProducts .par div{
+				order: 1;
+			}
 
-		.index-prod .productos figure div a{
+		.indexProducts figure div a{
 			text-decoration: none;
 			padding: 5% 0 2% 0;
 		}
 
-		.index-prod .productos figure img{
+		.indexProducts figure img{
 			width: 80%;
 		}
 
-	/*-----------Index Banner #2---------------------------------*/
-		/*No changes*/
 
 
 	/*-------------Index Historia------------------------*/
@@ -633,7 +498,7 @@ h1, h2, h3, h4{
 		width: 24%;
 	}
 		.foot .informativa .divSite h4{
-			margin-bottom: 10%;
+			margin-bottom: 5%;
 		}
 		.foot .informativa .divSite ul li{
 			list-style: none
@@ -642,6 +507,11 @@ h1, h2, h3, h4{
 				text-decoration: none;
 				color: #FFFFFF ;
 			}
+			.foot .informativa .divSite ul li a:hover{
+				color: #D99B96;
+			}
+
+
 
 	/*-------footDireccion-------------------------*/
 
@@ -683,6 +553,7 @@ h1, h2, h3, h4{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		width: 24%;
 	}
 		.foot .informativa .divConoc h4{
@@ -690,18 +561,24 @@ h1, h2, h3, h4{
 			margin-bottom: 5%;
 		}
 		.foot .informativa .divConoc ul{
-			gap: 10%
+			gap: 10%;
+			padding-left: 0;
 		}
 			.foot .informativa .divConoc ul li a{
 				text-decoration: none ;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 			}
 				.foot .informativa .divConoc ul li a p{
 					display: block;
-					color:#FFFFFF  ;
+					color:#FFFFFF ;
+				}
+				.foot .informativa .divConoc ul li a p:hover{
+					color:#D99B96 ;
 				}
 
-	/*--------footLegend------------------------*/
-		/*No changes*/
 
 
 	/*------------------------HISTORIA PAGE---------------------------------------*/
@@ -792,58 +669,31 @@ h1, h2, h3, h4{
 	/*--------------------CONTACTO PAGE-----------------------------------------*/										
 	/*-------------------------------------------------------------------------*/
 
-	.contacto-main{
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
 
-	.contacto-main .formulario{
-		width: 60%;
-		padding: 5%;
-	}
-	.contacto-main .info{
-		flex-direction: column;
-		align-items: center;
-		width: 30%;
-		padding: 0%;
-	}
-	.contacto-main .info div{
-		margin-bottom: 5%;
-	}
-
-	.contacto-main .info .contact{
-		width: 80%;
-	}
-	.contacto-main .info .contact p{
-		font-size: 100%;
-		margin-bottom: 0%;
-		padding: 0;
-	}
-	.contacto-main .info .contact h3{
-		margin-bottom: 5%;
-		margin-top: 10%;
-	}
-		.contacto-main .info .social{
-		width: 75%;
-	}
-
-	.contacto-main .info .social ul{
-		width: 100%;
-	}
-	.contacto-main .info .social ul li{
+	.contacto-main  .social ul li{
 		list-style: none;
 		margin-bottom: 1%;
 		margin-top: 1%;
 	}
-
+		
 	.contacto-main .frame iframe{
 		height: 40vh;
 	}
 
+}
 
 
 
 
+
+@media screen and (min-width: 1200px){
+
+	/*------------------------INDEX PAGE------------------------------------------*/
+
+	/*--------BOTONERA------------------------------*/
+	#botonera ul li a{
+		font-size: 160%;
+	}
 
 
 }

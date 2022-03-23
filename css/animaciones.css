@@ -4,37 +4,10 @@
 	background: linear-gradient(90deg, rgba(93,58,26,1) 0%, rgba(93,58,26,1) 33%, rgba(65,122,149,1) 100%);
 }
 
-@keyframes animateBanner{
-		from {font-size: 150%;
-			opacity: 1.0}
-		to {font-size: 170%;
-			opacity: 0.3}
+.btnGradient:hover{
+	background: linear-gradient(to top, rgba(93,58,26,1) 0%, rgba(93,58,26,1) 33%, rgba(65,122,149,1) 100%);
+	color: #FFFFFF;
 }
-
-.animate{
-	animation-name: animateBanner;
-	animation-iteration-count: initial;
-	animation-timing-function: linear;
-	animation-duration: 5s;
-	animation-delay: 0s;
-}
-
-/*@keyframes fadeInLeft{
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.animate__fadeInLeft {
-  animation-name: fadeInLeft;
-  animation-duration: 5s;
-}*/
 
 
 @media screen and (min-width: 768px){

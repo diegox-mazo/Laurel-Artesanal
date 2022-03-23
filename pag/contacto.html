@@ -3,41 +3,127 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contacto</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- My Style -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animaciones.css">
 
+	<title>Contacto</title>
 </head>
+
 <body class="grid-contacto">
 	<header>
 
-		<!------ Barra de Navegacion------------------------------>
-		<nav class="nav">
-			<figure class="logo">
-				<a href="../index.html">
-					<img src="../img/logo.png" alt="logo Laurel Artesanal">
-					<!-- <p>laurel artesanal</p> -->
-				</a>				
-			</figure>			
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="./historia.html">Historia</a></li>
-				<li><a href="./productos.html">Productos</a></li>
-				<li><a href="./galeria.html">Galeria</a></li>
-				<li><a href="./contacto.html">Contacto</a></li>
-			</ul>
+		<!----- Navbar Bootstrap ---------------------------------------------------->
+
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top border-bottom" id="botonera">
+		  <div class="container-fluid flex-column flex-md-row justify-content-center justify-md-content-around align-items-center">
+		    <a class="navbar-brand d-flex justify-content-center me-0" href="../index.html">
+		    	<img src="../img/logo.png" alt="logo Laurel Artesanal" class="w-75" id="logo">
+		    </a>
+
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		      <ul class="navbar-nav mb-0 me-md-3 me-lg-4 me-xl-5 text-center">
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="../index.html">Inicio</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./historia.html">Historia</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./productos.html">Productos</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./galeria.html">Galeria</a>
+		        </li>
+		        <li class="nav-item px-2">
+		          <a class="nav-link" href="./contacto.html">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
 		</nav>
 		<!--Fin Barra de Navecacion -->
 
 	</header>
 
+	<!-- Inicio de Main   -->
+
 	<main class="contacto-main">
-		<!-- Formulario de Contacto -->
+		
 		<section class="formulario">
-			<h3>ENVIAME TUS PREGUNTAS</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi aliquid quidem facere sequi maiores et recusandae quae, nisi iste porro tenetur ullam exercitationem repudiandae, labore autem in, placeat voluptatem!</p>
+			<div class="container-fluid mt-5 my-lg-5 p-lg-5">
+				<div class="row">
+
+					<div class="col-0 col-lg-1"></div>
+
+					<div class="col-lg-6">
+						<h3>ENVIAME TUS PREGUNTAS</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi aliquid quidem facere sequi maiores et recusandae quae, nisi iste porro tenetur ullam exercitationem repudiandae, labore autem in, placeat voluptatem!</p>
+
+						<!------ Formulario de Contacto Bootstrap----------------->
+						<form action="#" method="POST" id="contacto">
+							<div class="border border-1 p-5">
+								<div class="form-floating mb-3">
+								  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+								  <label for="floatingInput">Nombre Completo</label>
+								</div>
+								<div class="form-floating mb-3">
+								  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+								  <label for="floatingInput">Direccion Email</label>
+								</div>
+								<div class="form-floating mb-3">
+								  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+								  <label for="floatingTextarea">Comentarios</label>
+								</div>
+								<button type="submit" value="Enviar" class="btn btn-primary btnGradient">Enviar</button>
+							</div>				
+						</form>
+					</div>
+
+					<div class="col-0 col-lg-1"></div>
+
+					<!------------------ Datos de Contacto ----------------------------->
+					<div class="col-lg-3 d-flex flex-lg-column py-5 px-5 p-lg-0 py-lg-0 align-items-center justify-content-center">
+						<!-- Datos de Contacto -->
+						<div class="contact mb-lg-3 pb-lg-3">
+							<h3>CONTACTO</h3>
+							<p class="pb-0 m-0">Tel: ####</p>
+							<p class="mb-5">Email: @####</p>
+							<h3>DIRECCIÓN</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+						</div>
+						<div class="social mb-lg-3 pb-lg-3 w-50 w-md-100 w-lg-100">
+							<h3>SOCIAL</h3>
+							<ul>
+								<li>
+									<a href="https://instagram.com" target="_blank"><img src="../img/instagram-48.png" alt="siguenos en Instagram"><p>@LaurelArtesanal</p></a>
+									
+								</li>
+								<li>
+									<a href="https://facebook.com" target="_blank"><img src="../img/facebook-48.png" alt="siguenos en Facebook"><p>@LaurelArtesanal</p></a>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-0 col-lg-1"></div>
+
+				</div>
+			</div>
+
+
+
 			
-			<form action="#" method="POST" id="contacto">
+			
+			<!-- <form action="#" method="POST" id="contacto">
 				<fieldset>
 					<input type="text" placeholder="Nombre" name="nombre" id="nombre" class="w-75">
 					<input type="email" placeholder="@email" name="email" id="email" class="w-75">
@@ -45,10 +131,11 @@
 					<input type="submit" value="Enviar" class="w-30">
 					<input type="reset" value="Limpiar" class="w-30">
 				</fieldset>
-			</form>
+			</form> -->
 		</section>	
-			<!-- Datos de Contacto -->
-		<section class="info">
+
+
+		<!-- <section class="info">
 			<div class="contact">
 				<h3>CONTACTO</h3>
 				<p>Tel: ####</p>
@@ -69,7 +156,7 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Mapa Google -->
 		<section class="frame">
@@ -128,6 +215,9 @@
 			<p>Todos los derechos reservados @ - Diego Mazo</p>
 		</div>	
 	</footer>
+
+	<!-- Booststrap JS -->
+	<script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>
