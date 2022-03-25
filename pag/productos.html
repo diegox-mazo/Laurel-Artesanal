@@ -11,6 +11,14 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animaciones.css">
 
+	<!-- WOW js -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../js/wow.min.js"></script>
+    <script>
+		new WOW().init();
+	</script>
+	<!-- ------ -->
+
 	<title>Productos</title>	
 </head>
 
@@ -22,7 +30,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark sticky-top border-bottom" id="botonera">
 		  <div class="container-fluid flex-column flex-md-row justify-content-center justify-md-content-around align-items-center">
 		    <a class="navbar-brand d-flex justify-content-center me-0" href="../index.html">
-		    	<img src="../img/logo.png" alt="logo Laurel Artesanal" class="w-75" id="logo">
+		    	<img src="../img/logo.png" alt="logo Laurel Artesanal" class="w-75 hvr-grow-shadow" id="logo">
 		    </a>
 
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,15 +65,15 @@
 		<!-- Producto1: Tortas -->
 		<section id="producto1">
 			<div>
-				<h2>Tortas</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
-				<a href="./galeria.html">Ver mas...</a>
+				<h2 class="wow animate__fadeInLeft" data-wow-duration="1s">Tortas</h2>
+				<p class="wow animate__fadeInRight" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
+				<a class="btn btn-md btnGradient hvr-grow-shadow" href="./galeria.html">Ver mas...</a>
 			</div>
 			<div>
-				<img src="../img/tortas.jpg" alt="foto de tortas">
+				<img src="../img/tortas.jpg" alt="foto de tortas" class="hvr-glow">
 			</div>
 
-			<table border="2px" cellpadding="5px" cellspacing="5px">
+			<!-- <table border="2px" cellpadding="5px" cellspacing="5px">
 				<tr>
 					<th>Descripción</th>
 					<th>Tamaño</th>
@@ -86,21 +94,21 @@
 					<td>Pequeña (4 porciones)</td>
 					<td>$6.99</td>
 				</tr>
-			</table>
+			</table> -->
 		</section>
 
 		<!-- Producto2: Cenas -->
 		<section id="producto2" class="par">
-			<div class="order-1">
-				<h2>Cenas</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
-				<a href="./galeria.html">Ver mas...</a>
+			<div class="prodText">
+				<h2 class="wow animate__fadeInRight" data-wow-duration="1s">Cenas</h2>
+				<p class="wow animate__fadeInLeft" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
+				<a class="btn btn-md btnGradient hvr-grow-shadow" href="./galeria.html">Ver mas...</a>
 			</div>
-			<div>
-				<img src="../img/cenas.jpg" alt="foto de cenas">
+			<div class="prodImg">
+				<img src="../img/cenas.jpg" alt="foto de cenas" class="hvr-glow">
 			</div>
 
-			<table class="order-1" border="2px" cellpadding="5px" cellspacing="5px">
+			<!-- <table class="order-1" border="2px" cellpadding="5px" cellspacing="5px">
 				<tr>
 					<th>Descripción</th>
 					<th>Tamaño</th>
@@ -121,21 +129,21 @@
 					<td>Pequeña (4 porciones)</td>
 					<td>$6.99</td>
 				</tr>
-			</table>
+			</table> -->
 		</section>
 
 		<!-- Producto3: Eventos -->
 		<section id="producto3">
 			<div>
-				<h2>Eventos</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
-				<a href="./galeria.html">Ver mas...</a>
+				<h2 class="wow animate__fadeInLeft" data-wow-duration="1s">Eventos</h2>
+				<p class="wow animate__fadeInRight" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
+				<a class="btn btn-md btnGradient hvr-grow-shadow" href="./galeria.html">Ver mas...</a>
 			</div>
 			<div>
-				<img src="../img/eventos.jpg" alt="foto de eventos">
+				<img src="../img/eventos.jpg" alt="foto de eventos" class="hvr-glow">
 			</div>
 
-			<table border="2px" cellpadding="5px" cellspacing="5px">
+			<!-- <table border="2px" cellpadding="5px" cellspacing="5px">
 				<tr>
 					<th>Descripción</th>
 					<th>Tamaño</th>
@@ -156,18 +164,18 @@
 					<td>Pequeña (4 porciones)</td>
 					<td>$6.99</td>
 				</tr>
-			</table>
+			</table> -->
 		</section>
 
 		<!-- Producto4: Clases y Asesorias -->
 		<section id="producto4" class="par">
-			<div class="order-1">
-				<h2>Clases y Asesorias</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
-				<a href="./galeria.html">Ver mas...</a>
+			<div class="prodText">
+				<h2 class="wow animate__fadeInRight" data-wow-duration="1s">Clases y Asesorias</h2>
+				<p class="wow animate__fadeInLeft" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae iusto soluta voluptas blanditiis, numquam vel exercitationem error laboriosam, cumque, voluptatibus. Eum quibusdam ipsa, quae ut sed ab molestias assumenda?</p>
+				<a class="btn btn-md btnGradient hvr-grow-shadow" href="./galeria.html">Ver mas...</a>
 			</div>	
-			<div class="order-0">
-				<img src="../img/clases.jpg" alt="foto de clases y asesorias">
+			<div class="prodImg">
+				<img src="../img/clases.jpg" alt="foto de clases y asesorias" class="hvr-glow">
 			</div>		
 		</section>
 

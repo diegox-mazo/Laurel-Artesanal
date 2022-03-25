@@ -11,6 +11,14 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animaciones.css">
 
+	<!-- WOW js -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../js/wow.min.js"></script>
+    <script>
+		new WOW().init();
+	</script>
+	<!-- ------ -->
+
 	<title>Contacto</title>
 </head>
 
@@ -22,7 +30,7 @@
 		<nav class="navbar navbar-expand-md navbar-dark sticky-top border-bottom" id="botonera">
 		  <div class="container-fluid flex-column flex-md-row justify-content-center justify-md-content-around align-items-center">
 		    <a class="navbar-brand d-flex justify-content-center me-0" href="../index.html">
-		    	<img src="../img/logo.png" alt="logo Laurel Artesanal" class="w-75" id="logo">
+		    	<img src="../img/logo.png" alt="logo Laurel Artesanal" class="w-75 hvr-grow-shadow" id="logo">
 		    </a>
 
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,11 +72,11 @@
 					<div class="col-0 col-lg-1"></div>
 
 					<div class="col-lg-6">
-						<h3>ENVIAME TUS PREGUNTAS</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi aliquid quidem facere sequi maiores et recusandae quae, nisi iste porro tenetur ullam exercitationem repudiandae, labore autem in, placeat voluptatem!</p>
+						<h3 class="wow animate__pulse" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="5">ENVIAME TUS PREGUNTAS</h3>
+						<p class="wow animate__fadeIn" data-wow-duration="5s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam excepturi aliquid quidem facere sequi maiores et recusandae quae, nisi iste porro tenetur ullam exercitationem repudiandae, labore autem in, placeat voluptatem!</p>
 
 						<!------ Formulario de Contacto Bootstrap----------------->
-						<form action="#" method="POST" id="contacto">
+						<form action="#" method="POST" id="contacto" class="borderColor">
 							<div class="border border-1 p-5">
 								<div class="form-floating mb-3">
 								  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -82,7 +90,7 @@
 								  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
 								  <label for="floatingTextarea">Comentarios</label>
 								</div>
-								<button type="submit" value="Enviar" class="btn btn-primary btnGradient">Enviar</button>
+								<button type="submit" value="Enviar" class="btn btn-primary btnGradient hvr-grow-shadow">Enviar</button>
 							</div>				
 						</form>
 					</div>
@@ -93,14 +101,14 @@
 					<div class="col-lg-3 d-flex flex-lg-column py-5 px-5 p-lg-0 py-lg-0 align-items-center justify-content-center">
 						<!-- Datos de Contacto -->
 						<div class="contact mb-lg-3 pb-lg-3">
-							<h3>CONTACTO</h3>
-							<p class="pb-0 m-0">Tel: ####</p>
-							<p class="mb-5">Email: @####</p>
-							<h3>DIRECCIÓN</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+							<h3 class="wow animate__fadeInLeft" data-wow-duration="1s">CONTACTO</h3>
+							<p class="pb-0 m-0 wow animate__fadeIn" data-wow-duration="5s">Tel: ####</p>
+							<p class="mb-5 wow animate__fadeIn" data-wow-duration="5s">Email: @####</p>
+							<h3 class="wow animate__fadeInRight" data-wow-duration="1s">DIRECCIÓN</h3>
+							<p class="wow animate__fadeIn" data-wow-duration="5s">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
 						</div>
 						<div class="social mb-lg-3 pb-lg-3 w-50 w-md-100 w-lg-100">
-							<h3>SOCIAL</h3>
+							<h3 class="wow animate__fadeInDown" data-wow-duration="1s">SOCIAL</h3>
 							<ul>
 								<li>
 									<a href="https://instagram.com" target="_blank"><img src="../img/instagram-48.png" alt="siguenos en Instagram"><p>@LaurelArtesanal</p></a>
@@ -119,44 +127,9 @@
 				</div>
 			</div>
 
-
-
-			
-			
-			<!-- <form action="#" method="POST" id="contacto">
-				<fieldset>
-					<input type="text" placeholder="Nombre" name="nombre" id="nombre" class="w-75">
-					<input type="email" placeholder="@email" name="email" id="email" class="w-75">
-					<textarea placeholder="Mensaje" name="comentarios" id="comentarios" cols="30" rows="10" class="w-75"></textarea>
-					<input type="submit" value="Enviar" class="w-30">
-					<input type="reset" value="Limpiar" class="w-30">
-				</fieldset>
-			</form> -->
 		</section>	
 
 
-		<!-- <section class="info">
-			<div class="contact">
-				<h3>CONTACTO</h3>
-				<p>Tel: ####</p>
-				<p>Email: @####</p>
-				<h3>DIRECCIÓN</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
-			</div>
-			<div class="social">
-				<h3>SOCIAL</h3>
-				<ul>
-					<li>
-						<a href="https://instagram.com" target="_blank"><img src="../img/instagram-48.png" alt="siguenos en Instagram"><p>@LaurelArtesanal</p></a>
-						
-					</li>
-					<li>
-						<a href="https://facebook.com" target="_blank"><img src="../img/facebook-48.png" alt="siguenos en Facebook"><p>@LaurelArtesanal</p></a>
-
-					</li>
-				</ul>
-			</div>
-		</section> -->
 
 		<!-- Mapa Google -->
 		<section class="frame">

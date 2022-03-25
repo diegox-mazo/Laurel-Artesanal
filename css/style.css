@@ -37,6 +37,13 @@ h1, h2, h3, h4{
 	border-color: #5D3A1A;
 }
 
+/*--------Carousel Index-------------------------------*/
+/*#carouselExampleCaptions img{
+	height: 35vh;
+}*/
+
+
+
 
 /*------------SECCION PRODUCTS INDEX---------------*/
 .indexProducts{
@@ -48,22 +55,23 @@ h1, h2, h3, h4{
 	margin-right:5% ;
 	margin-left: 5%;
 }
-
-	.indexProducts .imp{
+	.indexProducts figure {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		padding: 2% 10%;
 		gap: 5%;
-		background-color: rgba(93, 58, 26, 0.3);
 		border-radius: 5%;
 	}
+
+	.indexProducts .imp{
+		
+		background-color: rgba(93, 58, 26, 0.3);
+	}
 	.indexProducts .par{
-		display: flex;
-		flex-direction: row;
-		padding: 2% 10%;
-		gap: 5%;
+
 		background-color: rgba(65, 122, 149, 0.3);
-		border-radius: 5%;
+		
 	}
 		.indexProducts .par img{
 			order: 1;
@@ -95,7 +103,8 @@ h1, h2, h3, h4{
 				color: #D99B96;
 			}
 		.indexProducts figure img{
-			width: 45%;
+			width: 50%;
+			border-radius: 2%;
 		}
 
 /*------------BANNER #2 INDEX--------------------------*/
@@ -293,9 +302,21 @@ h1, h2, h3, h4{
 		}
 		.product-main section div img{
 			width: 100%;
+			border-radius: 2%;
 		}
 .product-main .par{
 	background-color: rgba(93, 58, 23, 0.3);
+}
+	.product-main .par .prodText{
+		order: 0;
+	}
+	.product-main .par .prodImg{
+		order: 1;
+	}
+
+.product-main section div a{
+	background-color: #417A95;
+	color: #FFFFFF;
 }
 
 
@@ -413,20 +434,19 @@ h1, h2, h3, h4{
 		flex-direction: row;
 		gap:  5%;
 	}
-		.indexProducts .imp{
+		.indexProducts figure{
 			flex-direction: column;
 			align-items: center;
 			padding: 2% 1%;
 			gap: 5%;
 			border-radius: 10%;
+		}
+		.indexProducts .imp{
+			
 			background-color: rgba(93, 58, 26, 0.3);
 		}
 		.indexProducts .par{
-			flex-direction: column;
-			align-items: center;
-			padding: 2% 1%;
-			gap: 5%;
-			border-radius: 10%;
+
 			background-color: rgba(93, 58, 26, 0.3);
 		}
 			.indexProducts .par img{
@@ -628,12 +648,12 @@ h1, h2, h3, h4{
 				width: 100%;
 			}
 
-	.order-0{
-		order: 0;
-	}
-	.order-1{
-		order: 1;
-	}
+		.product-main .par .prodText{
+			order: 1;
+		}
+		.product-main .par .prodImg{
+			order: 0;
+		}
 
 
 	/*--------------------GALERIA PAGE-----------------------------------------*/										
