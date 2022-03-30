@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif; }
+
+#botonera {
+  background-color: #417a95; }
+  #botonera ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 1em; }
+    #botonera ul li a:hover {
+      color: #d99b96; }
+
+#logo {
+  border-style: solid;
+  border-color: #5d3a1a; }
+
+@media screen and (min-width: 768px) {
+  #botonera ul li a {
+    font-size: 150%; }
+  #logo {
+    width: 50% !important; } }
+
+@media screen and (min-width: 1200px) {
+  #botonera ul li a {
+    font-size: 150%; } }
+
+h1, h2, h3, h4 {
+  color: #d99b96;
+  font-family: "Courgette", cursive;
+  text-align: center; }
+
+/*------------SECCION PRODUCTS INDEX---------------*/
+.indexProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%; }
+  .indexProducts figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 10%;
+    gap: 5%;
+    border-radius: 5%; }
+    .indexProducts figure div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5%; }
+      .indexProducts figure div h3 {
+        color: #417a95;
+        margin-top: 5%;
+        padding-top: 1%; }
+      .indexProducts figure div p {
+        text-align: center; }
+      .indexProducts figure div a {
+        text-decoration: none;
+        background-color: #417a95;
+        color: white; }
+        .indexProducts figure div a:hover h3 {
+          color: #d99b96; }
+    .indexProducts figure img {
+      width: 50%;
+      border-radius: 2%; }
+  .indexProducts .imp {
+    background-color: rgba(93, 58, 26, 0.3); }
+  .indexProducts .par {
+    background-color: rgba(65, 122, 149, 0.3); }
+    .indexProducts .par img {
+      order: 1; }
+    .indexProducts .par div {
+      order: 0; }
+
+/*------------BANNER #2 INDEX--------------------------*/
+.indexBaner-dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #5d3a1a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12vh; }
+
+/*-------------SECCION HISTORIA INDEX-------------------------*/
+.index-his {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%; }
+  .index-his img {
+    width: 70%; }
+  .index-his div {
+    padding: 5% 5%; }
+    .index-his div p {
+      text-align: justify;
+      padding-top: 5%; }
+    .index-his div a {
+      background-color: #417a95;
+      color: white; }
+
+/*------------SECCION GALERIA INDEX--------------------------*/
+.index-gal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  background-color: rgba(93, 58, 23, 0.3); }
+  .index-gal h3 {
+    padding-bottom: 5%;
+    color: #5d3a1a; }
+  .index-gal a {
+    background-color: #417a95;
+    color: white; }
+  .index-gal ul li {
+    list-style: none;
+    margin-top: 2%; }
+
+@media screen and (min-width: 768px) {
+  /*----------- @ SECCION PRODUCTS INDEX---------------*/
+  .indexProducts {
+    flex-direction: row;
+    gap: 5%; }
+    .indexProducts figure {
+      flex-direction: column;
+      align-items: center;
+      padding: 2% 1%;
+      gap: 5%;
+      border-radius: 10%; }
+      .indexProducts figure div a {
+        text-decoration: none;
+        padding: 5% 0 2% 0; }
+      .indexProducts figure img {
+        width: 80%; }
+    .indexProducts .imp {
+      background-color: rgba(93, 58, 26, 0.3); }
+    .indexProducts .par {
+      background-color: rgba(93, 58, 26, 0.3); }
+      .indexProducts .par img {
+        order: 0; }
+      .indexProducts .par div {
+        order: 1; }
+  /*-------------Index Historia------------------------*/
+  .index-his {
+    flex-direction: row;
+    margin: 0 8%; }
+    .index-his img {
+      width: 100%; }
+  /*------------Index Galeria--------------------------*/
+  .index-gal ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin: 0 10%; }
+    .index-gal ul li img {
+      width: 99%; }
+  .index-gal h3 {
+    padding-bottom: 3%;
+    font-size: 150%; }
+  .index-gal a {
+    margin: 0 auto; } }
+
+/*-------------FOOTER-------------------------*/
+.foot .informativa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background-color: #417a95; }
+  .foot .informativa h3 {
+    /*--Hide for Desktop---*/
+    color: white; }
+  .foot .informativa .divSite {
+    /*--show for Desktop---*/
+    display: none; }
+  .foot .informativa .divDirec {
+    /*--show for Desktop---*/
+    display: none; }
+  .foot .informativa .divHora {
+    /*--show for Desktop---*/
+    display: none; }
+  .foot .informativa .divConoc h4 {
+    /*--show for Desktop---*/
+    display: none; }
+  .foot .informativa .divConoc ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .foot .informativa .divConoc ul li {
+      list-style: none; }
+      .foot .informativa .divConoc ul li a p {
+        display: none; }
+
+.foot .legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+  .foot .legend p {
+    text-align: center;
+    font-size: 80%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  /*-------------@ FOOTER-------------------------*/
+  .foot .informativa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5% 5% 2% 5%;
+    background-color: #417a95;
+    /*------footMapaSitio---------------------------*/
+    /*-------footDireccion-------------------------*/
+    /*-------footHorario-------------------------*/
+    /*------footConocenos--------------------------*/ }
+    .foot .informativa h3 {
+      display: none; }
+    .foot .informativa .divSite {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 24%; }
+      .foot .informativa .divSite h4 {
+        margin-bottom: 5%; }
+      .foot .informativa .divSite ul {
+        padding-left: 0; }
+        .foot .informativa .divSite ul li {
+          list-style: none;
+          text-align: center; }
+          .foot .informativa .divSite ul li a {
+            text-align: center;
+            font-size: 100%;
+            color: white;
+            text-decoration: none; }
+            .foot .informativa .divSite ul li a:hover {
+              color: #d99b96; }
+    .foot .informativa .divDirec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 24%;
+      margin-right: 2%; }
+      .foot .informativa .divDirec h4 {
+        margin-bottom: 5%; }
+      .foot .informativa .divDirec p {
+        text-align: center;
+        font-size: 100%;
+        color: white; }
+    .foot .informativa .divHora {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 24%; }
+      .foot .informativa .divHora h4 {
+        margin-bottom: 5%; }
+      .foot .informativa .divHora p {
+        text-align: center;
+        font-size: 100%;
+        color: white; }
+    .foot .informativa .divConoc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 24%; }
+      .foot .informativa .divConoc h4 {
+        display: block;
+        margin-bottom: 5%; }
+      .foot .informativa .divConoc ul {
+        gap: 10%;
+        padding-left: 0; }
+        .foot .informativa .divConoc ul li a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none; }
+          .foot .informativa .divConoc ul li a p {
+            text-align: center;
+            font-size: 100%;
+            color: white;
+            display: block; }
+            .foot .informativa .divConoc ul li a p:hover {
+              color: #d99b96; } }

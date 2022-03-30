@@ -1,0 +1,158 @@
+/*-------------FOOTER-------------------------*/
+.foot{
+	.informativa{
+		@include flexbox (row, space-between, center);
+		padding: 5%;
+		background-color: $primaryColor;
+
+		h3{	/*--Hide for Desktop---*/
+			color: $baseColor;
+		}
+
+		.divSite{ /*--show for Desktop---*/
+			display: none;
+		}
+		.divDirec{ /*--show for Desktop---*/
+			display: none;
+		}
+		.divHora{ /*--show for Desktop---*/
+			display: none;
+		}
+		.divConoc{
+			h4{	/*--show for Desktop---*/
+				display: none;
+			}
+			ul{
+				@include flexbox (row, space-between, center);
+
+				li{
+					list-style: none;
+					a{
+						p{
+							display: none;
+						}
+					} 
+				}
+			}
+		}
+	}
+
+	.legend{
+		@include flexbox (row, center, center);
+		background-color: black;
+
+		p{
+			@include texto(center, 80%, $baseColor);
+			margin-top: 1%;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+// ------------ @ Media QUERIES --------------------
+
+@media screen and (min-width: 768px){
+	/*-------------@ FOOTER-------------------------*/
+	.foot{
+		.informativa{
+			@include flexbox (row, space-between, start);
+			padding: 5% 5% 2% 5%;
+			background-color: $primaryColor;
+
+			h3{
+				display: none;
+			}
+
+			/*------footMapaSitio---------------------------*/
+			.divSite{
+				@include flexbox (column, center, center);
+				width: 24%;
+
+				h4{
+					margin-bottom: 5%;
+				}
+
+				ul{
+					padding-left: 0;
+					
+					li{
+						list-style: none;
+						text-align: center;
+
+						a{
+							@include texto(center, 100%, $baseColor);
+							text-decoration: none;
+
+							&:hover{
+								color: $keyColor;
+							}
+						}
+					}
+				}
+			}
+
+			/*-------footDireccion-------------------------*/
+			.divDirec{
+				@include flexbox (column, center, center);
+				width: 24%;
+				margin-right: 2%;
+
+				h4{
+					margin-bottom: 5%;
+				}
+
+				p{
+					@include texto(center, 100%, $baseColor);
+				}
+			}
+
+			/*-------footHorario-------------------------*/
+			.divHora{
+				@include flexbox (column, center, center);		
+				width: 24%;
+
+				h4{
+					margin-bottom: 5%;
+				}
+
+				p{
+					@include texto(center, 100%, $baseColor);
+				}
+			}
+
+			/*------footConocenos--------------------------*/
+			.divConoc{
+				@include flexbox (column, center, center);		
+				width: 24%;
+
+				h4{
+					display: block;
+					margin-bottom: 5%;
+				}
+
+				ul{
+					gap: 10%;
+					padding-left: 0;
+
+					li{
+						a{
+							@include flexbox (column, center, center);
+							text-decoration: none;
+
+							p{
+								@include texto(center, 100%, $baseColor);
+								display: block;
+
+								&:hover{
+									color: $keyColor;
+								}																
+							}														
+						}
+					}
+				}
+			}
+		}
+	}
+}		

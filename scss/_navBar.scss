@@ -1,0 +1,53 @@
+//------BOTONERA-----
+#botonera{
+	background-color: $primaryColor;
+	ul{
+		li{
+			a{
+				color: $baseColor;
+				font-weight: 400;
+				font-size: $textSm;
+
+				&:hover{
+					color: $keyColor;
+				}
+			}
+		}
+	}	
+}
+	
+
+#logo{
+	border-style: solid;
+	border-color: $secondaryColor;
+}
+
+//----------! MEDIA QUERIES !--------------------------------
+
+@media screen and (min-width: 768px){
+	#botonera{
+		ul{
+			li{
+				a{
+					font-size: 150%;				
+				}
+			}
+		}	
+	}
+
+	#logo{
+		width: 50% !important;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	#botonera{
+		ul{
+			li{
+				a{
+					font-size: 150%;				
+				}
+			}
+		}	
+	}
+}

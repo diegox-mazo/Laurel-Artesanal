@@ -1,0 +1,31 @@
+//definimos variables
+
+//colores
+$baseColor: rgba(255,255,255,1);
+$primaryColor: rgba(65,122,149,1);
+$secondaryColor: rgba(93,58,26,1);
+$keyColor: rgba(217,155,150,1);
+
+
+//sizing
+$w-100: 100%;
+$w-75: 75%;
+$w-50: 50%;
+$w-25: 25%;
+
+
+//Mixins
+@mixin flexbox($direction, $justify, $align){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin texto($align, $size, $color){
+	text-align: $align;
+	font-size: $size;
+	color: $color;
+}
+
+
