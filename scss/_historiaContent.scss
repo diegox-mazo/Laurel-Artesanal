@@ -1,0 +1,49 @@
+.hist-main{
+	figure{
+		@include flexbox (column, center, center);
+		margin: 3% 10%;
+
+		img{
+			width: 100%;
+			border-radius: 5%;
+			order: 1;
+		}
+
+		div{
+			@include flexbox (column, space-evenly, center);
+			padding-bottom: 5%;
+
+			p{
+				@include texto (justify, $textSm, $neutralColor);
+				padding-top: 5%;
+	
+			}
+		}
+	}
+}
+
+// ------------ @ Media QUERIES --------------------
+//--------------------------------------------------
+
+@media screen and (min-width: 768px){
+	
+	.hist-main{
+		figure{
+			flex-direction: row;
+			margin: 5% 10%;
+			gap:  10%;
+
+			img{
+				width: 50%;
+				order: 0;
+			}
+
+			div{
+				p{
+					text-align: justify;
+				}
+			}
+		}
+	}
+}
+

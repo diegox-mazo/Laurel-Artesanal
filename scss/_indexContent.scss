@@ -1,11 +1,4 @@
-// titulos de la pagina
-h1, h2, h3, h4{
-	color: $keyColor;
-	font-family: $secondaryFont;
-	text-align: center;
-}
-
-/*------------SECCION PRODUCTS INDEX---------------*/
+//------------SECCION PRODUCTS INDEX-----------------------
 .indexProducts{
 	@include flexbox (column, center, center);
 	margin-bottom: 5%;
@@ -49,10 +42,10 @@ h1, h2, h3, h4{
 	}
 
 	.imp{		
-		background-color: rgba(93, 58, 26, 0.3);
+		background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
 	}
 	.par{
-		background-color: rgba(65, 122, 149, 0.3);	
+		background-color: map-get($map:$primaryColor-Grad, $key:'0.3');	
 
 		img{
 			order: 1;
@@ -63,7 +56,7 @@ h1, h2, h3, h4{
 	}
 }
 
-/*------------BANNER #2 INDEX--------------------------*/
+//------------BANNER #2 INDEX-------------------------------
 .indexBaner-dos{		
 	@include flexbox (row, center, center);
 	background-color: $secondaryColor;
@@ -73,13 +66,13 @@ h1, h2, h3, h4{
 	height: 12vh;
 }
 
-/*-------------SECCION HISTORIA INDEX-------------------------*/
+//-------------SECCION HISTORIA INDEX------------------------
 .index-his{
 	@include flexbox (column, center, center);
 	padding: 5% 5%;
 
 	img{
-		width: 70%;
+		width: 50%;
 	}
 	div{
 		padding: 5% 5%;
@@ -95,11 +88,11 @@ h1, h2, h3, h4{
 	}
 }
 
-/*------------SECCION GALERIA INDEX--------------------------*/
+//------------SECCION GALERIA INDEX----------------------------
 .index-gal{
 	@include flexbox (column, center, center);
 	padding: 5% 0;
-	background-color: rgba(93, 58, 23, 0.3);
+	background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
 
 	h3{
 		padding-bottom: 5%;
@@ -112,45 +105,61 @@ h1, h2, h3, h4{
 	}
 
 	ul{
+		padding-left: 0;
 		li{
+			@include flexbox (column, center, center);
 			list-style: none;
 			margin-top: 2%;
+
+			img{
+				width: 99%;
+			}
 		}
 	}
 }
 
 
-// ------------ @ Media QUERIES --------------------
+
+
+// ------------ @ Media QUERIES -----------------------------
+//-----------------------------------------------------------
+
+
 
 @media screen and (min-width: 768px){
 
-	/*----------- @ SECCION PRODUCTS INDEX---------------*/
+	//----------- @ SECCION PRODUCTS INDEX---------------
 	.indexProducts{
 		flex-direction: row;
 		gap:  5%;
 
 		figure{
 			flex-direction: column;
-			align-items: center;
+			align-content: space-between;
 			padding: 2% 1%;
-			gap: 5%;
+			gap: 2%;
 			border-radius: 10%;
+			height: 460px;
 
 			div{
+				align-content: space-between;
+				height: 60%;
+
 				a{
 					text-decoration: none;
 					padding: 5% 0 2% 0;
 				}
 			}
+
 			img{
 				width: 80%;
 			}
 		}
 		.imp{			
-			background-color: rgba(93, 58, 26, 0.3);
+			background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
 		}
 		.par{
-			background-color: rgba(93, 58, 26, 0.3);
+			background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
 
 			img{
 				order: 0;
@@ -161,19 +170,21 @@ h1, h2, h3, h4{
 		}
 	}
 
-
-	/*-------------Index Historia------------------------*/
+	//-------------@Index Historia------------------------
 	.index-his{
 		flex-direction: row;
+		justify-content: center;
 		margin: 0 8%;
 
 		img{
-			width: 100%;
+			width: 30%;
+		}
+		div{
+			width: 50%
 		}
 	}
 
-	/*------------Index Galeria--------------------------*/
-
+	//------------@Index Galeria---------------------------
 	.index-gal{
 		ul{
 			display: flex;
@@ -182,6 +193,7 @@ h1, h2, h3, h4{
 			margin: 0 10%;
 
 			li{
+
 				img{
 					width: 99%
 				}
@@ -190,7 +202,7 @@ h1, h2, h3, h4{
 
 		h3{
 			padding-bottom: 3%;
-			font-size: 150%;
+			font-size: $textXl;
 		}
 		
 		a{
@@ -198,6 +210,29 @@ h1, h2, h3, h4{
 		}
 	}		
 }
+
+
+@media screen and (min-width: 1200px){
+
+	//----------- @ SECCION PRODUCTS INDEX---------------
+	.indexProducts{
+
+		figure{
+			height: 500px;
+			gap:0;
+
+			div{
+				height: 50%;
+				gap:1%;		
+			}
+
+			img{
+				width: 80%;
+			}
+		}
+	}
+}
+
 	
 	
 	

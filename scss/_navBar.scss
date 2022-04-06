@@ -20,6 +20,7 @@
 #logo{
 	border-style: solid;
 	border-color: $secondaryColor;
+	width: 65%;
 }
 
 //----------! MEDIA QUERIES !--------------------------------
@@ -29,14 +30,14 @@
 		ul{
 			li{
 				a{
-					font-size: 150%;				
+					font-size: $textLg;		
 				}
 			}
 		}	
 	}
 
 	#logo{
-		width: 50% !important;
+		width: 50%;
 	}
 }
 
@@ -45,7 +46,7 @@
 		ul{
 			li{
 				a{
-					font-size: 150%;				
+					font-size: $textXl;				
 				}
 			}
 		}	

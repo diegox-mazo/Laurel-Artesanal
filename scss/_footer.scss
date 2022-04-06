@@ -39,10 +39,10 @@
 
 	.legend{
 		@include flexbox (row, center, center);
-		background-color: black;
+		background-color: $neutralColor;
 
 		p{
-			@include texto(center, 80%, $baseColor);
+			@include texto(center, $textXs, $baseColor);
 			margin-top: 1%;
 			margin-bottom: 0;
 		}
@@ -58,7 +58,7 @@
 	.foot{
 		.informativa{
 			@include flexbox (row, space-between, start);
-			padding: 5% 5% 2% 5%;
+			padding: 3% 5% 1% 5%;
 			background-color: $primaryColor;
 
 			h3{
@@ -82,7 +82,7 @@
 						text-align: center;
 
 						a{
-							@include texto(center, 100%, $baseColor);
+							@include texto(center, $textSm, $baseColor);
 							text-decoration: none;
 
 							&:hover{
@@ -104,7 +104,7 @@
 				}
 
 				p{
-					@include texto(center, 100%, $baseColor);
+					@include texto(center, $textSm, $baseColor);
 				}
 			}
 
@@ -118,7 +118,7 @@
 				}
 
 				p{
-					@include texto(center, 100%, $baseColor);
+					@include texto(center, $textSm, $baseColor);
 				}
 			}
 
@@ -142,7 +142,7 @@
 							text-decoration: none;
 
 							p{
-								@include texto(center, 100%, $baseColor);
+								@include texto(center, $textSm, $baseColor);
 								display: block;
 
 								&:hover{

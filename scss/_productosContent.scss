@@ -1,0 +1,77 @@
+.product-main{
+	@include flexbox (column, center, center);
+
+	section{
+		@include flexbox (column, center, center);
+		padding: 5% 10%;
+
+		div{
+			margin-bottom: 5%;
+
+			p{
+				text-align: justify;
+				margin-top: 5%;
+				margin-bottom: 2%;
+			}
+
+			img{
+				width: 100%;
+				border-radius: 2%;
+			}
+
+			a{
+				background-color: $primaryColor;
+				color: $baseColor;
+			}
+		}
+	}
+
+	.par{
+		background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
+
+		h2{
+			color:$primaryColor;
+		}
+
+		.prodText{
+			order: 0;
+		}
+
+		.prodImg{
+			order: 1;
+		}
+	}
+}
+
+
+
+// ------------ @ Media QUERIES --------------------
+//--------------------------------------------------
+
+@media screen and (min-width: 768px){
+
+	.product-main{
+
+		section{
+			@include flexbox (row, center, center);
+			gap: 5%;
+
+			div{
+				width: 40%;
+
+				img{
+					width: 90%;
+				}
+			}
+		}
+
+		.par{
+			.prodText{
+				order: 1;
+			}
+			.prodImg{
+				order: 0;
+			}
+		}
+	}
+}

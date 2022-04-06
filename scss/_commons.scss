@@ -1,20 +1,43 @@
-//definimos variables
+// Importar las Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@400;600&display=swap');
 
-//colores
-$baseColor: rgba(255,255,255,1);
-$primaryColor: rgba(65,122,149,1);
-$secondaryColor: rgba(93,58,26,1);
-$keyColor: rgba(217,155,150,1);
+$primaryFont: 'Roboto Slab', serif;
+$secondaryFont: 'Courgette', cursive;
 
 
-//sizing
-$w-100: 100%;
-$w-75: 75%;
-$w-50: 50%;
-$w-25: 25%;
+//Variables para los textos--------------------------
+$textXs: 80%;
+$textSm: 100%;
+$textMd: 120%;
+$textLg: 140%;
+$textXl: 160%;
 
 
-//Mixins
+//Colores-------------------------------------------
+$baseColor: 	rgba(255,255,255,1);
+$primaryColor:	rgba(65,122,149,1);
+$secondaryColor:rgba(93,58,26,1);
+$keyColor:		rgba(217,155,150,1);
+$neutralColor:	rgba(0,0,0,1);
+
+
+$primaryColor-Grad:(
+	'1.0':		rgba(65,122,149,1),
+	'0.7':		rgba(65,122,149,0.7),
+	'0.5':		rgba(65,122,149,0.5),
+	'0.3':		rgba(65,122,149,0.3),
+	'0.1':		rgba(65,122,149,0.1),
+);
+$secondaryColor-Grad:(
+	'1.0':		rgba(93,58,26,1),
+	'0.7':		rgba(93,58,26,0.7),
+	'0.5':		rgba(93,58,26,0.5),
+	'0.3':		rgba(93,58,26,0.3),
+	'0.1':		rgba(93,58,26,0.1),
+);
+
+
+//Mixins--------------------------------------------
 @mixin flexbox($direction, $justify, $align){
 	display: flex;
 	flex-direction: $direction;
@@ -26,6 +49,23 @@ $w-25: 25%;
 	text-align: $align;
 	font-size: $size;
 	color: $color;
+}
+
+
+//Reset---------------------------------------------
+*{
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $primaryFont;
+}
+
+
+// Titulos de la pagina----------------------------
+h1, h2, h3, h4{
+	color: $keyColor;
+	font-family: $secondaryFont;
+	text-align: center;
 }
 
 

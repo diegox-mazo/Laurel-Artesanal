@@ -1,0 +1,65 @@
+.contacto-main{
+	section{
+		p{
+			text-align: center;
+			padding: 5%;
+		}
+	}
+
+	button{
+		background-color: $primaryColor;
+		color: $baseColor;
+	}
+
+	.social{
+		ul{
+			padding-left: 0;
+
+			li{
+				list-style: none;
+				margin-bottom: 5%;
+				margin-top: 5%;
+
+				a{
+					@include flexbox (column, center, center);
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	.frame{
+		width: 100%;
+
+		iframe{
+			height: 30vh;
+			width: 100%;
+		}
+	}
+}
+
+
+// ------------ @ Media QUERIES --------------------
+//--------------------------------------------------
+
+
+@media screen and (min-width: 768px){
+	.contacto-main{
+		.social{
+			ul{
+				li{
+					list-style: none;
+					margin-bottom: 1%;
+					margin-top: 1%;
+				}
+			}
+		}
+	}
+
+	.frame{
+		iframe{
+			height: 40vh;
+		}
+	}
+}

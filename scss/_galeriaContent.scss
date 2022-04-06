@@ -1,0 +1,72 @@
+.galeria-main{
+	@include flexbox (column, center, center);
+
+	section{
+		@include flexbox (column, center, center);
+		padding: 5%;
+		width: 100%;
+
+		h2{
+			margin-bottom: 5%;
+			color: $keyColor;
+		}
+
+		ul{
+			background-image: url("../img/galeria.jpg");  /*ANIMACION PARA CAMBIO DE IMAGEN*/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto;
+			height: 25vh;
+			width: 100vw;
+
+			li{
+				list-style: none;
+				display: none;
+			}
+		}
+	}
+
+	.par{
+		background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
+		h2{
+			color: $primaryColor;
+		}
+	}
+}
+
+// ------------ @ Media QUERIES --------------------
+//--------------------------------------------------
+
+
+@media screen and (min-width: 768px){
+
+	.galeria-main{
+		section{
+			ul{
+				background-image: none;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				gap:  1%;
+
+				li{
+					list-style: none;
+					display: inline;
+					width: 25%;
+					margin-bottom: 0.5%;
+
+					img{
+						width: 100%;
+						border-radius: 2%;
+					}
+				}
+			}
+		}
+
+		.par{
+			background-color: map-get($map:$secondaryColor-Grad, $key:'0.3');
+		}
+	}
+}
