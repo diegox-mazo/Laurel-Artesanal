@@ -62,10 +62,19 @@ $secondaryColor-Grad:(
 
 
 // Titulos de la pagina----------------------------
-h1, h2, h3, h4{
+h1{
 	color: $keyColor;
 	font-family: $secondaryFont;
 	text-align: center;
+}
+h2{
+	@extend h1;
+}
+h3{
+	@extend h1;
+}
+h4{
+	@extend h1;
 }
 
 

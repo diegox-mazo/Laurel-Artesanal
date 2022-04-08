@@ -45,15 +45,13 @@ h1, h2, h3, h4 {
   .foot .informativa h3 {
     /*--Hide for Desktop---*/
     color: white; }
-  .foot .informativa .divSite {
+  .foot .informativa .divSite, .foot .informativa .divDirec, .foot .informativa .divHora {
     /*--show for Desktop---*/
     display: none; }
   .foot .informativa .divDirec {
-    /*--show for Desktop---*/
-    display: none; }
+    /*--show for Desktop---*/ }
   .foot .informativa .divHora {
-    /*--show for Desktop---*/
-    display: none; }
+    /*--show for Desktop---*/ }
   .foot .informativa .divConoc h4 {
     /*--show for Desktop---*/
     display: none; }
@@ -95,25 +93,25 @@ h1, h2, h3, h4 {
     /*------footConocenos--------------------------*/ }
     .foot .informativa h3 {
       display: none; }
-    .foot .informativa .divSite {
+    .foot .informativa .divSite, .foot .informativa .divDirec, .foot .informativa .divHora {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 24%; }
-      .foot .informativa .divSite h4 {
+      .foot .informativa .divSite h4, .foot .informativa .divDirec h4, .foot .informativa .divHora h4 {
         margin-bottom: 5%; }
-      .foot .informativa .divSite ul {
+      .foot .informativa .divSite ul, .foot .informativa .divDirec ul, .foot .informativa .divHora ul {
         padding-left: 0; }
-        .foot .informativa .divSite ul li {
+        .foot .informativa .divSite ul li, .foot .informativa .divDirec ul li, .foot .informativa .divHora ul li {
           list-style: none;
           text-align: center; }
-          .foot .informativa .divSite ul li a {
+          .foot .informativa .divSite ul li a, .foot .informativa .divDirec ul li a, .foot .informativa .divHora ul li a {
             text-align: center;
             font-size: 100%;
             color: white;
             text-decoration: none; }
-            .foot .informativa .divSite ul li a:hover {
+            .foot .informativa .divSite ul li a:hover, .foot .informativa .divDirec ul li a:hover, .foot .informativa .divHora ul li a:hover {
               color: #d99b96; }
     .foot .informativa .divDirec {
       display: flex;
@@ -361,6 +359,12 @@ h1, h2, h3, h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .product-main .encabezado {
+    padding: 3% 0;
+    background-color: rgba(65, 122, 149, 0.1); }
+    .product-main .encabezado h1, .product-main .encabezado h2, .product-main .encabezado h3, .product-main .encabezado h4 {
+      color: #417a95;
+      text-decoration: underline; }
   .product-main section {
     display: flex;
     flex-direction: column;
@@ -389,6 +393,8 @@ h1, h2, h3, h4 {
       order: 1; }
 
 @media screen and (min-width: 768px) {
+  .product-main .encabezado {
+    padding: 2% 0; }
   .product-main section {
     display: flex;
     flex-direction: row;
@@ -409,6 +415,12 @@ h1, h2, h3, h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .galeria-main .encabezado {
+    padding: 3% 0;
+    background-color: rgba(65, 122, 149, 0.1); }
+    .galeria-main .encabezado h1, .galeria-main .encabezado h2, .galeria-main .encabezado h3, .galeria-main .encabezado h4 {
+      color: #417a95;
+      text-decoration: underline; }
   .galeria-main section {
     display: flex;
     flex-direction: column;
@@ -436,24 +448,35 @@ h1, h2, h3, h4 {
       color: #417a95; }
 
 @media screen and (min-width: 768px) {
-  .galeria-main section ul {
-    background-image: none;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1%; }
-    .galeria-main section ul li {
-      list-style: none;
-      display: inline;
-      width: 25%;
-      margin-bottom: 0.5%; }
-      .galeria-main section ul li img {
-        width: 100%;
-        border-radius: 2%; }
+  .galeria-main .encabezado {
+    padding: 2% 0; }
+  .galeria-main section {
+    padding-top: 3%; }
+    .galeria-main section ul {
+      background-image: none;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1%; }
+      .galeria-main section ul li {
+        list-style: none;
+        display: inline;
+        width: 25%;
+        margin-bottom: 0.5%; }
+        .galeria-main section ul li img {
+          width: 100%;
+          border-radius: 2%; }
   .galeria-main .par {
     background-color: rgba(93, 58, 26, 0.3); } }
+
+.contacto-main .encabezado {
+  padding: 3% 0;
+  background-color: rgba(65, 122, 149, 0.1); }
+  .contacto-main .encabezado h1, .contacto-main .encabezado h2, .contacto-main .encabezado h3, .contacto-main .encabezado h4 {
+    color: #417a95;
+    text-decoration: underline; }
 
 .contacto-main section p {
   text-align: center;
@@ -484,6 +507,8 @@ h1, h2, h3, h4 {
     width: 100%; }
 
 @media screen and (min-width: 768px) {
+  .contacto-main .encabezado {
+    padding: 1% 0; }
   .contacto-main .social ul li {
     list-style: none;
     margin-bottom: 1%;

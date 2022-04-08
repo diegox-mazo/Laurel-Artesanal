@@ -1,6 +1,15 @@
 .galeria-main{
 	@include flexbox (column, center, center);
 
+	.encabezado{
+		padding: 3% 0;
+		background-color: map-get($map:$primaryColor-Grad, $key:'0.1');
+		h1{
+			color: $primaryColor;
+			text-decoration: underline;
+		}
+	}
+
 	section{
 		@include flexbox (column, center, center);
 		padding: 5%;
@@ -41,7 +50,13 @@
 @media screen and (min-width: 768px){
 
 	.galeria-main{
+
+		.encabezado{
+			padding: 2% 0;
+		}
+
 		section{
+			padding-top: 3%;
 			ul{
 				background-image: none;
 				height: auto;

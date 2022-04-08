@@ -13,10 +13,10 @@
 			display: none;
 		}
 		.divDirec{ /*--show for Desktop---*/
-			display: none;
+			@extend .divSite;
 		}
 		.divHora{ /*--show for Desktop---*/
-			display: none;
+			@extend .divSite;
 		}
 		.divConoc{
 			h4{	/*--show for Desktop---*/
