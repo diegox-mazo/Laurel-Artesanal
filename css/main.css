@@ -165,50 +165,32 @@ h1, h2, h3, h4 {
               color: #d99b96; } }
 
 .indexProducts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5%;
-  margin-right: 5%;
-  margin-left: 5%; }
+  margin-bottom: 5%; }
   .indexProducts figure {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2% 10%;
-    gap: 5%;
-    border-radius: 5%; }
+    width: 75%;
+    padding: 5% 5% 1% 5%;
+    border-radius: 5%;
+    background-color: rgba(93, 58, 26, 0.3); }
+    .indexProducts figure img {
+      width: 95%;
+      border-radius: 2%; }
     .indexProducts figure div {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 5%; }
+      align-items: center; }
       .indexProducts figure div h3 {
-        color: #417a95;
-        margin-top: 5%;
-        padding-top: 1%; }
+        color: #417a95; }
       .indexProducts figure div p {
         text-align: center; }
       .indexProducts figure div a {
         text-decoration: none;
         background-color: #417a95;
         color: white; }
-        .indexProducts figure div a:hover h3 {
-          color: #d99b96; }
-    .indexProducts figure img {
-      width: 50%;
-      border-radius: 2%; }
-  .indexProducts .imp {
-    background-color: rgba(93, 58, 26, 0.3); }
-  .indexProducts .par {
-    background-color: rgba(65, 122, 149, 0.3); }
-    .indexProducts .par img {
-      order: 1; }
-    .indexProducts .par div {
-      order: 0; }
 
 .indexBaner-dos {
   display: flex;
@@ -221,22 +203,29 @@ h1, h2, h3, h4 {
   background-size: cover;
   height: 12vh; }
 
-.index-his {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5% 5%; }
-  .index-his img {
-    width: 50%; }
-  .index-his div {
-    padding: 5% 5%; }
-    .index-his div p {
-      text-align: justify;
-      padding-top: 5%; }
-    .index-his div a {
-      background-color: #417a95;
-      color: white; }
+.index-his figure {
+  padding: 5%; }
+  .index-his figure img {
+    width: 65%; }
+  .index-his figure div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .index-his figure div .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .index-his figure div .card-body h3 {
+        margin-bottom: 5%; }
+      .index-his figure div .card-body p {
+        text-align: justify;
+        margin-bottom: 5%; }
+      .index-his figure div .card-body a {
+        text-decoration: none;
+        background-color: #417a95;
+        color: white; }
 
 .index-gal {
   display: flex;
@@ -264,40 +253,19 @@ h1, h2, h3, h4 {
         width: 99%; }
 
 @media screen and (min-width: 768px) {
-  .indexProducts {
-    flex-direction: row;
-    gap: 5%; }
-    .indexProducts figure {
-      flex-direction: column;
-      align-content: space-between;
-      padding: 2% 1%;
-      gap: 2%;
-      border-radius: 10%;
-      height: 460px; }
-      .indexProducts figure div {
-        align-content: space-between;
-        height: 60%; }
-        .indexProducts figure div a {
-          text-decoration: none;
-          padding: 5% 0 2% 0; }
-      .indexProducts figure img {
-        width: 80%; }
-    .indexProducts .imp {
-      background-color: rgba(93, 58, 26, 0.3); }
-    .indexProducts .par {
-      background-color: rgba(93, 58, 26, 0.3); }
-      .indexProducts .par img {
-        order: 0; }
-      .indexProducts .par div {
-        order: 1; }
-  .index-his {
+  .indexProducts figure {
+    width: 90%; }
+    .indexProducts figure img {
+      width: 90%; }
+  .index-his figure img {
+    width: 100%; }
+  .index-his figure div {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 8%; }
-    .index-his img {
-      width: 30%; }
-    .index-his div {
-      width: 50%; }
+    align-items: center; }
+    .index-his figure div .card-body p {
+      text-align: justify; }
   .index-gal ul {
     display: flex;
     flex-direction: row;
@@ -313,13 +281,11 @@ h1, h2, h3, h4 {
 
 @media screen and (min-width: 1200px) {
   .indexProducts figure {
-    height: 500px;
-    gap: 0; }
-    .indexProducts figure div {
-      height: 50%;
-      gap: 1%; }
+    width: 85%; }
     .indexProducts figure img {
-      width: 80%; } }
+      width: 85%; }
+  .index-his figure div .card-body p {
+    font-size: 120%; } }
 
 .hist-main figure {
   display: flex;
@@ -432,27 +398,6 @@ h1, h2, h3, h4 {
       margin-bottom: 5%;
       color: #d99b96; }
     .galeria-main section ul {
-      background-image: url("../img/galeria.jpg");
-      /*ANIMACION PARA CAMBIO DE IMAGEN*/
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      height: 25vh;
-      width: 100vw; }
-      .galeria-main section ul li {
-        list-style: none;
-        display: none; }
-  .galeria-main .par {
-    background-color: rgba(93, 58, 26, 0.3); }
-    .galeria-main .par h2 {
-      color: #417a95; }
-
-@media screen and (min-width: 768px) {
-  .galeria-main .encabezado {
-    padding: 2% 0; }
-  .galeria-main section {
-    padding-top: 3%; }
-    .galeria-main section ul {
       background-image: none;
       height: auto;
       display: flex;
@@ -469,7 +414,15 @@ h1, h2, h3, h4 {
           width: 100%;
           border-radius: 2%; }
   .galeria-main .par {
-    background-color: rgba(93, 58, 26, 0.3); } }
+    background-color: rgba(93, 58, 26, 0.3); }
+    .galeria-main .par h2 {
+      color: #417a95; }
+
+@media screen and (min-width: 768px) {
+  .galeria-main .encabezado {
+    padding: 2% 0; }
+  .galeria-main section {
+    padding-top: 3%; } }
 
 .contacto-main .encabezado {
   padding: 3% 0;
@@ -515,3 +468,13 @@ h1, h2, h3, h4 {
     margin-top: 1%; }
   .frame iframe {
     height: 40vh; } }
+
+#error-page img {
+  margin: 1%;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    #error-page img {
+      width: 80%; } }
+  @media screen and (min-width: 1200px) {
+    #error-page img {
+      width: 60%; } }

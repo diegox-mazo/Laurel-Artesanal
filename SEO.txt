@@ -1,0 +1,41 @@
+SEO - LAUREL ARTESANAL
+
+En el presente documento se declaran los cambios realizados al proyecto para la inclusión de la optimización para motores de búsqueda SEO.
+
+INDEX
+1.	Se agrega etiqueta de metadatos para incluir la descripción de la página de inicio.
+Descripción: "Somos una repostería artesanal dedicada a ofrecer los mejores productos en tortas, postres, cenas especiales y catering de mesas dulces para todo tipo de eventos".
+2.	Se agrega etiqueta de metadatos para las palabras claves:
+Palabras Clave: "repostería, artesanal, tortas, postres, cupcakes, cenas, eventos, clases, asesorías, dulce".
+3.	Se agrega descripción a cada una de las imágenes de la página.
+
+HISTORIA
+1.	Se agrega etiqueta de metadatos para incluir la descripción de la página de historia.
+Descripción: "Nuestro compromiso es ofrecer la mejor calidad en cada uno de nuestros proyectos y lograr transmitir sensaciones para satisfacer cada uno de los sentidos."
+2.	Se agrega etiqueta de metadatos para las palabras claves:
+Palabras Clave: "repostera, artesanal, historia, nosotros, compromiso"
+
+PRODUCTOS
+1.	Se agrega etiqueta de metadatos para incluir la descripción de la página de historia.
+Descripción: "Te ofrecemos los más deliciosos productos de repostería para todo momento y fecha especial. Instrúyete con nosotros para ser parte del equipo de repostería más talentoso."
+2.	Se agrega etiqueta de metadatos para las palabras claves:
+Palabras Clave: "tortas, artesanal, eventos, cenas, clases, asesorías, productos, especial".
+3.	Se agrega descripción a cada una de las imágenes de la página.
+
+
+
+GALERIA
+1.	Se agrega etiqueta de metadatos para incluir la descripción de la página de historia.
+Descripción: "Galería de fotos de nuestros productos de tortas, cenas y eventos Laurel Artesanal"
+2.	Se agrega etiqueta de metadatos para las palabras claves:
+Palabras Clave: " tortas, cenas, eventos, asesorías, artesanal, galería ".
+3.	Se agrega descripción a cada una de las imágenes de la página.
+4.	Nombre de la imagen relativo al contenido de la imagen.
+
+
+CONTACTO
+1.	Se agrega etiqueta de metadatos para incluir la descripción de la página de historia.
+Descripción: "Te ofrecemos los más deliciosos productos de repostería para todo momento y fecha especial. Instrúyete con nosotros para ser parte del equipo de repostería más talentoso."
+2.	Se agrega etiqueta de metadatos para las palabras claves:
+Palabras Clave: "contacto, cotización, Instagram, Facebook, pedidos, información"
+3.	Se agrega información de contacto.
